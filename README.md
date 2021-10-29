@@ -13,7 +13,7 @@ Com apenas um arquivo de texto que contém o nome de vários artistas, você pod
 * client_id
 * client_secret
 * redirect_uri
-3. Crie um arquivo chamado ```artistas.txt``` e insira o nome dos artistas que você quer ter na sua playlist.
+3. No arquivo ```artistas.txt``` insira o nome dos artistas que você quer ter na sua playlist.
 Em breve mais detalhes de como obter:
 3. Executar a aplicação:
 ```python3 spotipy-create-playlist.py```
