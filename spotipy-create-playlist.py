@@ -56,6 +56,7 @@ musica_uri = [] # armazena o uri de cada música
 
 for i in range(qtd_artistas):
     busca_top_musicas = sp.artist_top_tracks(artistas_id[i])
+    # Buscando as top 3 músicas de cada artista
     for track in busca_top_musicas["tracks"][:3]:
         # musica_info.append(busca_top_musicas["tracks"][0]["name"])
         musica_titulo.append(track["name"])
