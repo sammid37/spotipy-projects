@@ -10,13 +10,19 @@ Com apenas um arquivo de texto que contém o nome de vários artistas, você pod
 1. Instale as dependências
 ```pip3 install -r requirements.txt```
 2. Altere as informações do arquivo ```secrets.py```
-* client_id
-* client_secret
-* redirect_uri
-3. No arquivo ```artistas.txt``` insira o nome dos artistas que você quer ter na sua playlist.
-Em breve mais detalhes de como obter:
+   1. Para obter seu `user_id` é necessário acessar o seu perfil do Spotify, por exemplo: https://open.spotify.com/user/22gvuymg64y3e3zciarqaypoy
+   2. Para obter: `client_id`, `client_secret` e gerar um `redirect_uri` é necessário fazer no login em [**Spotify fo Developers**](https://developer.spotify.com/dashboard/login) utilizando sua conta do Spotify.
+      1. Acessar o [Dashboard](https://developer.spotify.com/dashboard/applications) e criar uma uma aplicação/app 
+         ![alt text](https://1.bp.blogspot.com/-2HyMxEQCMbg/YXwgSOWDLTI/AAAAAAAALcE/_9RoB0mnI0okZEWDrZyAREJJQ0lCi-Q_wCLcBGAsYHQ/s1347/Screenshot%2B2021-10-29%2Bat%2B13-12-09%2BMy%2BDashboard%2BSpotify%2Bfor%2BDevelopers.png)
+         ![alt text](https://1.bp.blogspot.com/-omkrJ5ZkoAs/YXwgSHc3YlI/AAAAAAAALcI/8xudZoz3OTg7rdAdLpn6WVilUFCmYa8zwCLcBGAsYHQ/s793/Screenshot%2B2021-10-29%2Bat%2B13-13-44%2BMy%2BDashboard%2BSpotify%2Bfor%2BDevelopers.png)
+      2. Acessar a aplicação e obter: `client_id` e o `client_secret`
+         ![alt text](https://lh3.googleusercontent.com/-0upB7IdnhYw/YXwhwEuEoHI/AAAAAAAALcc/IN_dUfmvMJMZF9qjvobg_Unhbj_wCzfsACLcBGAsYHQ/pixelado_oficial.png)
+      3. Editar as configurações do aplicativo e inserir uma **Redirect URI**, utilizei: *http://localhost:8080/callback*
+         ![alt text](https://1.bp.blogspot.com/-QXHsGCKShOY/YXwgSNn6pqI/AAAAAAAALcQ/Of98UbeUnO0lcXQNowwCG4AJbufsXef6wCLcBGAsYHQ/s549/Screenshot%2B2021-10-29%2Bat%2B13-15-41%2BMy%2BDashboard%2BSpotify%2Bfor%2BDevelopers.png)
+
+3. Crie um arquivo chamado ```artistas.txt``` e insira o nome dos artistas que você quer ter na sua playlist.
 3. Executar a aplicação:
 ```python3 spotipy-create-playlist.py```
 
 ## todo:
-* Em breve
+* Em breve futuras ideias de implementação aqui.
