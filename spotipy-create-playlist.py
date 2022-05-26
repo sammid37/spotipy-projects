@@ -1,7 +1,19 @@
+import base64
 import spotipy
-from datetime import datetime
+import spotipy.util as util
 from spotipy.oauth2 import SpotifyOAuth
 from secrets import user_id, client_id, client_secret, redirect_uri
+from datetime import datetime
+from time import sleep
+
+# Abrindo imagem de capa como arquivo binário e codificando
+def converter_img_cover(img):
+    with open(img, "rb") as img_file:
+        img_file_data = img_file.read()
+        base64_encoded_data = base64.b64encode(img_file_data)
+        base64_message = base64_encoded_data.decode("utf-8")
+
+    return base64_message
 
 # Abrindo o arquivo no modo de leitura
 arquivo = open("artistas.txt", "r")
@@ -62,3 +74,6 @@ for i in range(qtd_artistas):
 # Adicionando as top 3 músicas de cada artista na playlist
 sp.playlist_add_items(playlist_id, musica_uri) 
 print(f"As seguintes músicas foram salvas: {musica_titulo}")
+
+# Adicionando uma capa para a playlist, reautenticando token
+# sp.playlist_upload_cover_image(playlist_id=playlist_id, image_b64=converter_img_cover("capa.jpg"))
