@@ -1,6 +1,3 @@
-# Samantha Dantas Medeiros (28/10/2021)
-# Cria uma playlist com as 3 principais músicas de cada artista presente em um arquivo.txt
-
 import spotipy
 from datetime import datetime
 from spotipy.oauth2 import SpotifyOAuth
