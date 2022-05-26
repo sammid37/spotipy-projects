@@ -1,7 +1,8 @@
-# Basta colocar seu nome de usuário aqui, por exemplo: 22gvuymg64y3e3zciarqaypoy
-user_id = "seu_username_aqui"
+# Nome de usuário
+# https://open.spotify.com/user/seu_nome_de_usuario_esta_aqui
+user_id = ""
 
 # Pode ser obtido acessando o dashboard da API do Spotify
-client_id="client_id"
-client_secret="client_secret"
-redirect_uri="redirect_uri"
+client_id=""
+client_secret=""
+redirect_uri="http://localhost:8080/callback"
