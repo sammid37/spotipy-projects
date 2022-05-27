@@ -67,13 +67,16 @@ for i in range(qtd_artistas):
     busca_top_musicas = sp.artist_top_tracks(artistas_id[i])
     # Buscando as top 3 músicas de cada artista
     for track in busca_top_musicas["tracks"][:3]:
-        # musica_info.append(busca_top_musicas["tracks"][0]["name"])
         musica_titulo.append(track["name"])
         musica_uri.append(track["uri"])
 
 # Adicionando as top 3 músicas de cada artista na playlist
 sp.playlist_add_items(playlist_id, musica_uri) 
-print(f"As seguintes músicas foram salvas: {musica_titulo}")
+print("-"*42)
+print(f"As seguintes músicas foram salvas:")
+print('\n'.join(map(str, musica_titulo)))
+print("-"*42)
 
-# Adicionando uma capa para a playlist, reautenticando token
+#? Apresentando erro(possivel bug com a API do Spotify): Adicionando uma capa para a playlist
+# https://github.com/plamere/spotipy/issues/749
 # sp.playlist_upload_cover_image(playlist_id=playlist_id, image_b64=converter_img_cover("capa.jpg"))
