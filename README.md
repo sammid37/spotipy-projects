@@ -3,8 +3,8 @@
 Com apenas um arquivo de texto que contém o nome de vários artistas, você pode criar uma playlist no Spotify que contém as top 3 músicas de cada um deles. 
 
 ## ✏️ Tecnologias utilizadas
-* Python 3.6.9
-* [Spotipy 2.19.0](https://spotipy.readthedocs.io/en/2.19.0/)
+* Python 3.10.9
+* [Spotipy 2.23.0](https://spotipy.readthedocs.io/en/2.19.0/)
 
 # ⚙️ Configurações
 1. Instale as dependências `pip3 install -r requirements.txt`
