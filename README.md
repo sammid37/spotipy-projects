@@ -19,7 +19,7 @@ Com apenas um arquivo de texto que contém o nome de vários artistas, você pod
          ![alt text](https://lh3.googleusercontent.com/-0upB7IdnhYw/YXwhwEuEoHI/AAAAAAAALcc/IN_dUfmvMJMZF9qjvobg_Unhbj_wCzfsACLcBGAsYHQ/pixelado_oficial.png)
       3. Editar as configurações do aplicativo e inserir uma **Redirect URI**, utilizei: *http://localhost:8080/callback*
          ![alt text](https://1.bp.blogspot.com/-QXHsGCKShOY/YXwgSNn6pqI/AAAAAAAALcQ/Of98UbeUnO0lcXQNowwCG4AJbufsXef6wCLcBGAsYHQ/s549/Screenshot%2B2021-10-29%2Bat%2B13-15-41%2BMy%2BDashboard%2BSpotify%2Bfor%2BDevelopers.png)
-4. Executar a aplicação: `python3 spotipy-create-playlist.py`
+4. Executar a aplicação: `python main.py`
 
 # ✏️ Futuras implementações e funcionalidades
 - Criar funções para a criação de diferentes tipos de playlist e um menu de opções;
