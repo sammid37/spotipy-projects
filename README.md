@@ -4,7 +4,7 @@ Com apenas um arquivo de texto que contém o nome de vários artistas, você pod
 
 ## ✏️ Tecnologias utilizadas
 * Python 3.10.9
-* [Spotipy 2.23.0](https://spotipy.readthedocs.io/en/2.19.0/)
+* [Spotipy 2.23.0](https://spotipy.readthedocs.io/en/2.22.1/)
 
 # ⚙️ Configurações
 1. Instale as dependências `pip3 install -r requirements.txt`
